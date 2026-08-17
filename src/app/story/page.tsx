@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import { ArrowUpRight, Flame, Leaf, Award, HeartHandshake, Utensils } from "lucide-react";
 
 import storyHeroImage from "@/assets/hero-story.jpg";
-import feastImage from "@/assets/hero-menu.jpg";
+import feastImage from "@/assets/dish-indochinese.jpg";
 import { restaurant } from "@/data/restaurant";
 import { Navbar } from "@/components/liz/Navbar";
 import { Footer } from "@/components/liz/Footer";
 import { PageHeader } from "@/components/liz/PageHeader";
 import { StorySection } from "@/components/liz/StorySection";
 import { ImageWithFallback } from "@/components/liz/ImageWithFallback";
-import { LizLink } from "@/components/liz/LizButton";
 import { ScrollReveal } from "@/components/liz/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -115,7 +114,7 @@ export default function StoryPage() {
                 <div className="overflow-hidden rounded-3xl shadow-xl border border-[#E8E0D7] bg-[#2A0E24]">
                   <ImageWithFallback
                     src={feastImage}
-                    alt="Royal Chaska dining feast spread with biryani handi and tandoori grills"
+                    alt="Royal Chaska Indo-Chinese and Indian dining feast with noodles and chilli chicken"
                     className="aspect-4/3 w-full object-cover"
                   />
                 </div>
