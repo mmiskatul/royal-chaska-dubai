@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   MapPin,
   Clock,
@@ -20,7 +20,13 @@ import { ScrollReveal } from "./ScrollReveal";
 
 export function LocationHoursSection() {
   const [copied, setCopied] = useState(false);
-  const openNow = isOpenNow();
+  const [openNow, setOpenNow] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    setOpenNow(isOpenNow());
+  }, []);
 
   const copyAddress = async () => {
     try {
@@ -158,11 +164,11 @@ export function LocationHoursSection() {
                 <div className="flex items-center gap-2 rounded-full px-3 py-1 text-xs font-bold border border-[#E8E0D7] bg-[#FCFBF8]">
                   <span
                     className={`size-2.5 rounded-full ${
-                      openNow ? "bg-emerald-600 animate-pulse" : "bg-amber-600"
+                      mounted && openNow ? "bg-emerald-600 animate-pulse" : "bg-amber-600"
                     }`}
                   />
-                  <span className={openNow ? "text-emerald-700" : "text-amber-700"}>
-                    {openNow ? "Open Now" : "Currently Closed"}
+                  <span className={mounted && openNow ? "text-emerald-700" : "text-amber-700"}>
+                    {mounted ? (openNow ? "Open Now" : "Currently Closed") : "Open Daily"}
                   </span>
                 </div>
               </div>

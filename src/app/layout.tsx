@@ -98,14 +98,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${displayFont.variable} ${sansFont.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${displayFont.variable} ${sansFont.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-[#FCFBF8] font-sans text-[#1D151C] antialiased selection:bg-[#4B164C] selection:text-[#FDE047]">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen bg-[#FCFBF8] font-sans text-[#1D151C] antialiased selection:bg-[#4B164C] selection:text-[#FDE047]"
+      >
         {children}
       </body>
     </html>
