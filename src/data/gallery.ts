@@ -3,13 +3,13 @@ import indochinese from "@/assets/dish-indochinese.jpg";
 import chickenCurry from "@/assets/dish-chicken-curry.jpg";
 import dosa from "@/assets/dish-dosa.jpg";
 import fishFry from "@/assets/dish-fish-fry.jpg";
-import biryani from "@/assets/hero-kerala-meal.jpg";
+import chickenBiryani from "@/assets/dish-chicken-biryani.jpg";
 import packagingBag from "@/assets/royal-takeaway-bag.jpg";
 import payasam from "@/assets/dish-payasam.jpg";
 import interior from "@/assets/interior.jpg";
 import spices from "@/assets/texture-spices.jpg";
 import chai from "@/assets/atmos-chai.jpg";
-import storyTable from "@/assets/story-table.jpg";
+import tandoorKitchen from "@/assets/hero-story.jpg";
 
 export const galleryCategories = [
   "All",
@@ -59,8 +59,8 @@ export const gallery: GalleryImage[] = [
   },
   {
     id: "g5",
-    src: biryani,
-    alt: "Aromatic Royal Handi Dum Biryani with saffron rice and raita",
+    src: chickenBiryani,
+    alt: "Aromatic Royal Handi Chicken Dum Biryani with saffron rice and raita",
     category: "Food",
     span: "sm:row-span-2",
   },
@@ -72,8 +72,8 @@ export const gallery: GalleryImage[] = [
   },
   {
     id: "g7",
-    src: storyTable,
-    alt: "Royal dining banquet table spread with tandoori grills and biryanis",
+    src: tandoorKitchen,
+    alt: "Authentic live charcoal tandoor kitchen preparing fresh naans and grills",
     category: "Atmosphere",
   },
   {

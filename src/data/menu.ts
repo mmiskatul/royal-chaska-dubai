@@ -1,17 +1,15 @@
 /**
  * Menu data for Royal Chaska Dubai (Indian & Indo-Chinese Cuisine).
- * Every dish has its own unique, authentic photograph.
+ * Authentic Indian & Indo-Chinese dishes with no Kerala/banana-leaf imagery.
  */
 
 import heroRoyalSizzler from "@/assets/hero-royal-sizzler.jpg";
 import dishChickenBiryani from "@/assets/dish-chicken-biryani.jpg";
-import heroMuttonBiryani from "@/assets/hero-kerala-meal.jpg";
+import heroBanquetFeast from "@/assets/hero-menu.jpg";
 import dishIndoChinese from "@/assets/dish-indochinese.jpg";
 import dishChilliChicken from "@/assets/dish-beef-roast.jpg";
-import dishVegManchurian from "@/assets/dish-kozhukatta.jpg";
 import dishFriedRice from "@/assets/hero-gallery.jpg";
 import dishButterChicken from "@/assets/dish-chicken-curry.jpg";
-import dishPaneerTikka from "@/assets/story-table.jpg";
 import dishMalaiRoll from "@/assets/dish-dosa.jpg";
 import dishTandooriNaan from "@/assets/dish-appam.jpg";
 import dishFishTikka from "@/assets/dish-fish-fry.jpg";
@@ -89,7 +87,7 @@ export const menu: MenuItem[] = [
       "Melt-in-mouth tender mutton layered with fragrant basmati rice and secret royal spices, sealed in handi and dum-cooked.",
     price: null,
     diet: "non-veg",
-    image: heroMuttonBiryani,
+    image: heroBanquetFeast,
     ingredients: ["Tender Mutton", "Long Grain Rice", "Cardamom & Cloves", "Burrani Raita"],
     dietaryInfo: "Non-Vegetarian. Rich & flavorful.",
     signature: true,
@@ -140,7 +138,7 @@ export const menu: MenuItem[] = [
       "Golden minced vegetable dumplings simmered in a savory, aromatic ginger-garlic and dark soya Manchurian gravy.",
     price: null,
     diet: "veg",
-    image: dishVegManchurian,
+    image: dishIndoChinese,
     ingredients: ["Vegetable Dumplings", "Ginger Garlic", "Coriander", "Soya Sauce"],
     dietaryInfo: "Vegetarian. Pairs perfectly with Fried Rice.",
   },
@@ -177,7 +175,7 @@ export const menu: MenuItem[] = [
       "Charred paneer cubes cooked in a spiced onion-tomato gravy with diced bell peppers.",
     price: null,
     diet: "veg",
-    image: dishPaneerTikka,
+    image: dishButterChicken,
     ingredients: ["Fresh Paneer", "Bell Peppers", "Onions", "Spiced Tomato Gravy"],
     dietaryInfo: "Vegetarian.",
   },
