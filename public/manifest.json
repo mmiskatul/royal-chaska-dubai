@@ -1,0 +1,16 @@
+{
+  "name": "Royal Chaska Restaurant Dubai",
+  "short_name": "Royal Chaska",
+  "description": "Authentic Indian & Indo-Chinese Restaurant in Al Karama, Dubai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2A0E24",
+  "theme_color": "#4B164C",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
